@@ -92,7 +92,7 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "Build1.005bb";
+      var buildUrl = "Build1.006bb";
       var loaderUrl = buildUrl + "/farmGL.loader.js";
       var config = {
         dataUrl: buildUrl + "/farmGL.data",
@@ -101,7 +101,7 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "TwistedJoy",
         productName: "Farmastia",
-        productVersion: "1.005b",
+        productVersion: "1.006b",
         showBanner: unityShowBanner,
       };
 
@@ -118,6 +118,9 @@
         meta.name = 'viewport';
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
+      }else{
+        canvas.style.width = "71.25vh"//"53.43vh"//"1080px";
+        canvas.style.height = "95vh"//"1920px";
       }
 
       loadingBar.style.display = "block";
