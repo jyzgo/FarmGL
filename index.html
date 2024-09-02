@@ -92,16 +92,16 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "Build1.004bb";
+      var buildUrl = "Build1.005bb";
       var loaderUrl = buildUrl + "/farmGL.loader.js";
       var config = {
-        dataUrl: buildUrl + "/farmGL.data.gz",
-        frameworkUrl: buildUrl + "/farmGL.framework.js.gz",
-        codeUrl: buildUrl + "/farmGL.wasm.gz",
+        dataUrl: buildUrl + "/farmGL.data",
+        frameworkUrl: buildUrl + "/farmGL.framework.js",
+        codeUrl: buildUrl + "/farmGL.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Zen Farm",
-        productVersion: "1.004b",
+        productVersion: "1.005b",
         showBanner: unityShowBanner,
       };
 
@@ -119,8 +119,8 @@
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
       }else{
-        canvas.style.width = "71.25vh"//"53.43vh"//"960px";
-        canvas.style.height = "95vh"//"600px";
+        canvas.style.width = "71.25vh"//"53.43vh"//"1080px";
+        canvas.style.height = "95vh"//"1920px";
       }
 
       loadingBar.style.display = "block";
